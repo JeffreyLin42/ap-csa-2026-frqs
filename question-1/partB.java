@@ -10,7 +10,7 @@ Complete method getShortenedName.
 */
 public String getShortenedName(){
   String result = username;
-  while(result.equals("-")){
+  while(result.indexOf("-")!=-1){
     int x = result.indexOf("-");
     result= result.substring(0,x-1)+result.substring(x+1);
   
