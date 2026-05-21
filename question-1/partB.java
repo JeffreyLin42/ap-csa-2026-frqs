@@ -15,4 +15,5 @@ public String getShortenedName(){
     result= result.substring(0,x-1)+result.substring(x+1);
   
   }
+  return result;
 }
