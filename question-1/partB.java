@@ -9,12 +9,10 @@ Complete method getShortenedName.
 * Postcondition: username is unchanged.
 */
 public String getShortenedName(){
-  for(int i=0; i< username.length();i++){
-    String result= username;
-    if(username.equals("-")){
-      result = ;
-    }
+  String result = username;
+  while(result.equals("-")){
+    int x = result.indexOf("-");
+    result= result.substring(0,x-1)+result.substring(x+1);
   
   }
-  
 }
