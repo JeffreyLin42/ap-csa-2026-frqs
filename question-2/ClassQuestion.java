@@ -12,7 +12,7 @@ Public class Bottle{
     }else{
       ml=ml-up;
     }
-    
+    return ml;
     
   }
   
